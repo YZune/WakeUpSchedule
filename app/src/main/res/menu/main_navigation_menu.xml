@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item android:title="小工具">
+            <menu>
+                <item
+                    android:id="@+id/nav_today"
+                    android:icon="@drawable/calendar"
+                    android:title="今日课程" />
+                <item
+                    android:id="@+id/nav_timeTable"
+                    android:icon="@drawable/clock"
+                    android:title="苏大作息" />
+                <item
+                    android:id="@+id/nav_changeBg"
+                    android:icon="@drawable/color"
+                    android:title="更换背景" />
+            </menu>
+
+        </item>
+        <item android:title="其他">
+            <menu>
+                <item
+                    android:id="@+id/nav_feedback"
+                    android:icon="@drawable/service"
+                    android:title="反馈" />
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/information"
+                    android:title="关于" />
+                <item
+                    android:id="@+id/nav_setting"
+                    android:icon="@drawable/set"
+                    android:title="设置" />
+            </menu>
+        </item>
+    </group>
+</menu>

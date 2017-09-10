@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF88CB</color>
+    <color name="colorPrimaryDark">#FF88CB</color>
+    <color name="colorAccent">#FF88CB</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="classIndex" >#00000000</color>
+    <color name="courseTextColor" >#000000</color>
+    <color name="actionBarBg">#6666CC</color>
+    <color name="actionBarText">#EDEDED</color>
+    <color name="statusBarColor">#fbf6f0</color>
+
+    <color name="one">#b48af28d</color>
+    <color name="two">#b400ff9d</color>
+    <color name="three">#b4ff6200</color>
+    <color name="four">#b4e7554e</color>
+    <color name="five">#b44695ff</color>
+    <color name="six">#b4ca71ff</color>
+    <color name="seven">#b43daff1</color>
+    <color name="eight">#b45d5dff</color>
+    <color name="nine">#b480deea</color>
+    <color name="ten">#b42f88ff</color>
+    <color name="none">#322b2b2b</color>
+</resources>
