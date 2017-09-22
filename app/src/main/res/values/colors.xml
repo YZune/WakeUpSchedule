@@ -13,6 +13,12 @@
     <color name="actionBarText">#EDEDED</color>
     <color name="statusBarColor">#fbf6f0</color>
 
+    <color name="gray">#cccccc</color>
+    <color name="black">#a0151515</color>
+    <color name="page_bg">#f5f7f8</color>
+    <color name="divider">#e7e7e7</color>
+    <color name="trmainColor">#772196F3</color>
+
     <color name="one">#b48af28d</color>
     <color name="two">#b400ff9d</color>
     <color name="three">#b4ff6200</color>
@@ -24,4 +30,8 @@
     <color name="nine">#b480deea</color>
     <color name="ten">#b42f88ff</color>
     <color name="none">#322b2b2b</color>
+
+    <color name="widgetBg">#b4ffffff</color>
+    <color name="widgetText">#000000</color>
+    <color name="widgetFont">#2f88ff</color>
 </resources>

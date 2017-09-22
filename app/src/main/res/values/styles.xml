@@ -19,4 +19,20 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
+    <style name="setting_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@drawable/bg_ripple</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="setting_item_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/item_margin_left</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
 </resources>

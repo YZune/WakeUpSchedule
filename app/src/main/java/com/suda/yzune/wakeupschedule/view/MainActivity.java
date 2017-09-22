@@ -96,8 +96,8 @@ public class MainActivity extends AppCompatActivity {
             String Table = html.substring(html.indexOf(">", tableStart), html.indexOf("</table>", tableStart));
             int start = 0;
             String single;
+            String rowLater = "";
             String[] singleSplit;
-            String[] againSingleSplit;
             while (Table.indexOf("<tr>", start) != -1) {
                 int end = Table.indexOf("</tr>", Table.indexOf("<tr>", start));
                 String row = Table.substring(Table.indexOf("<tr>", start), end);
@@ -110,35 +110,9 @@ public class MainActivity extends AppCompatActivity {
                         int rowEnd = row.indexOf("</td>", row.indexOf("left=100,top=50')\">", rowStart));
                         single = row.substring(row.indexOf("left=100,top=50')\">", rowStart) + 19, rowEnd);
                         singleSplit = single.split("<br>");
-                        againSingleSplit = singleSplit;
-                        int isOdd_ = 0;
-                        int step_ = 1;
-                        int startWeek_ = 1;
-                        int endWeek_ = 20;
                         if (single.contains("left=100,top=50')\">")) {
+                            rowLater = single;
                             againFlag = true;
-                            int again = single.indexOf("left=100,top=50')\">") + 19;
-                            String againSingle = single.substring(again);
-                            againSingleSplit = againSingle.split("<br>");
-                            if (againSingleSplit[1].contains("单周")) {
-                                isOdd_ = 1;
-                            } else if (againSingleSplit[1].contains("双周")) {
-                                isOdd_ = 2;
-                            }
-                            if (againSingleSplit[1].contains("节/周")) {
-                                int numLocate = againSingleSplit[1].indexOf("节/周");
-                                step_ = Integer.parseInt(againSingleSplit[1].substring(numLocate - 1, numLocate));
-                            } else if (againSingleSplit[1].contains(",")) {
-                                int numLocate = 0;
-                                step_ = 1;
-                                while (againSingleSplit[1].indexOf(",", numLocate) != -1 && numLocate < againSingleSplit[1].length()) {
-                                    step_ += 1;
-                                    numLocate = againSingleSplit[1].indexOf(",", numLocate) + 1;
-                                }
-                                Log.d("计数", step_ + "");
-                            }
-                            startWeek_ = Integer.parseInt(againSingleSplit[1].substring(againSingleSplit[1].indexOf("{第") + 2, againSingleSplit[1].indexOf("-")));
-                            endWeek_ = Integer.parseInt(againSingleSplit[1].substring(againSingleSplit[1].indexOf("-") + 1, againSingleSplit[1].indexOf("周", againSingleSplit[1].indexOf("-"))));
                         }
                         int countStart = 0;
                         while (row.indexOf("align=\"Center\"", countStart) != -1 && countStart < rowEnd) {
@@ -203,9 +177,16 @@ public class MainActivity extends AppCompatActivity {
                         endWeek = Integer.parseInt(singleSplit[1].substring(singleSplit[1].indexOf("-") + 1, singleSplit[1].indexOf("周", singleSplit[1].indexOf("-"))));
                         rowStart = rowEnd + 1;
                         Log.d("名称t", singleSplit[0] + "星期" + day + "长度" + step + "开始" + startWeek + "结束" + endWeek);
-                        allCourse.add(new Course(singleSplit[0], singleSplit[3], startIndex, step, singleSplit[2], "", day, startWeek, endWeek, isOdd));
+                        //allCourse.add(new Course(singleSplit[0], singleSplit[3], startIndex, step, singleSplit[2], "", day, startWeek, endWeek, isOdd));
+                        if (singleSplit.length >= 4) {
+                            allCourse.add(new Course(singleSplit[0], singleSplit[3], startIndex, step, singleSplit[2], "", day, startWeek, endWeek, isOdd));
+                        } else {
+                            String[] mix = singleSplit[2].split("/");
+                            mix[1].indexOf("(");
+                            allCourse.add(new Course(singleSplit[0], mix[1].substring(mix[1].indexOf("(") + 1, mix[1].length() - 1), startIndex, step, mix[1].substring(0, mix[1].indexOf("(")), "", day, startWeek, endWeek, isOdd));
+                        }
                         if (againFlag) {
-                            allCourse.add(new Course(againSingleSplit[0], againSingleSplit[3], startIndex, step_, againSingleSplit[2], "", day, startWeek_, endWeek_, isOdd_));
+                            getfromLater(rowLater, startIndex, day, allCourse);
                         }
 
                     }
@@ -220,6 +201,47 @@ public class MainActivity extends AppCompatActivity {
             i.putExtra("who", 1);
             startActivity(i);
             finish();
+        }
+    }
+
+    public static void getfromLater(String later, int startIndex, int day, List<Course> allCourse) {
+        String[] singles = later.split("left=100,top=50");
+        for (int i = 1; i < singles.length; i++) {
+            if (singles[i].contains("<br><")) {
+                singles[i] = singles[i].substring(singles[i].indexOf(">") + 1, singles[i].indexOf("<br><"));
+            } else {
+                singles[i] = singles[i].substring(singles[i].indexOf(">") + 1);
+            }
+            String[] singleSplit = singles[i].split("<br>");
+            int isOdd = 0;
+            if (singleSplit[1].contains("单周")) {
+                isOdd = 1;
+            } else if (singleSplit[1].contains("双周")) {
+                isOdd = 2;
+            }
+            int step = 1;
+            if (singleSplit[1].contains("节/周")) {
+                int numLocate = singleSplit[1].indexOf("节/周");
+                step = Integer.parseInt(singleSplit[1].substring(numLocate - 1, numLocate));
+            } else if (singleSplit[1].contains(",")) {
+                int numLocate = 0;
+                step = 1;
+                while (singleSplit[1].indexOf(",", numLocate) != -1 && numLocate < singleSplit[1].length()) {
+                    step += 1;
+                    numLocate = singleSplit[1].indexOf(",", numLocate) + 1;
+                }
+            }
+            int startWeek = 1;
+            int endWeek = 20;
+            startWeek = Integer.parseInt(singleSplit[1].substring(singleSplit[1].indexOf("{第") + 2, singleSplit[1].indexOf("-")));
+            endWeek = Integer.parseInt(singleSplit[1].substring(singleSplit[1].indexOf("-") + 1, singleSplit[1].indexOf("周", singleSplit[1].indexOf("-"))));
+            if (singleSplit.length >= 4) {
+                allCourse.add(new Course(singleSplit[0], singleSplit[3], startIndex, step, singleSplit[2], "", day, startWeek, endWeek, isOdd));
+            } else {
+                String[] mix = singleSplit[2].split("/");
+                mix[1].indexOf("(");
+                allCourse.add(new Course(singleSplit[0], mix[1].substring(mix[1].indexOf("(") + 1, mix[1].length() - 1), startIndex, step, mix[1].substring(0, mix[1].indexOf("(")), "", day, startWeek, endWeek, isOdd));
+            }
         }
     }
 

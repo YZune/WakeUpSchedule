@@ -8,13 +8,21 @@
                     android:icon="@drawable/calendar"
                     android:title="今日课程" />
                 <item
-                    android:id="@+id/nav_timeTable"
-                    android:icon="@drawable/clock"
-                    android:title="苏大作息" />
+                    android:id="@+id/nav_fix"
+                    android:icon="@drawable/electronics"
+                    android:title="电脑义修" />
                 <item
                     android:id="@+id/nav_changeBg"
                     android:icon="@drawable/color"
                     android:title="更换背景" />
+                <item
+                    android:id="@+id/nav_joinUs"
+                    android:icon="@drawable/favorite"
+                    android:title="加入我们" />
+                <item
+                    android:id="@+id/nav_update"
+                    android:icon="@drawable/download"
+                    android:title="检查更新" />
             </menu>
 
         </item>

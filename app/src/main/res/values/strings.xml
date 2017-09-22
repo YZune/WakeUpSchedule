@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">WakeUp课程表</string>
-    <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
+    <string name="shortcuts_today">今日课程</string>
+    <string name="fix_help">电脑义修</string>
+
 </resources>

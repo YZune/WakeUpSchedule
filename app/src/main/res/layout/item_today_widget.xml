@@ -2,32 +2,116 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="8dp"
-    android:paddingBottom="8dp">
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
 
     <ImageView
-        android:layout_width="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_width="4dp"
         android:layout_height="match_parent"
-        android:src="@color/colorAccent"/>
+        android:layout_marginRight="8dp"
+        android:src="@color/widgetFont" />
+
+    <LinearLayout
+        android:layout_width="16dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="01"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="12"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
+
         <TextView
             android:id="@+id/tv_startTime"
-            android:layout_margin="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="08:00"/>
+            android:layout_margin="4dp"
+            android:text="08:00"
+            android:textSize="12sp" />
+
         <TextView
             android:id="@+id/tv_endTime"
-            android:layout_margin="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="08:50"/>
+            android:layout_margin="4dp"
+            android:text="08:50"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/widget_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="数据结构"
+            android:textColor="@color/widgetText"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-16dp"
+                android:layout_marginRight="-8dp"
+                android:src="@drawable/map" />
+
+            <TextView
+                android:id="@+id/widget_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="理工楼二楼"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="-8dp"
+                android:src="@drawable/man" />
+
+            <TextView
+                android:id="@+id/widget_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="唐自立"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>
