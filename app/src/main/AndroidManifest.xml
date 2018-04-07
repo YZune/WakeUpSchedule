@@ -87,7 +87,6 @@
         <activity
             android:name=".view.activity.ThemeSettingsActivity"
             android:label="自定风格" />
-        <activity android:name=".view.Main2Activity"></activity>
     </application>
 
 </manifest>
