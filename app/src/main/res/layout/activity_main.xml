@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/ImageTranslucentTheme"
-    tools:context="com.suda.yzune.wakeupschedule.view.MainActivity">
+    tools:context="com.suda.yzune.wakeupschedule.view.activity.MainActivity">
 
     <RelativeLayout
         android:id="@+id/rl_title"

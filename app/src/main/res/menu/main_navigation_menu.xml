@@ -8,13 +8,17 @@
                     android:icon="@drawable/calendar"
                     android:title="今日课程" />
                 <item
+                    android:id="@+id/nav_otherCourse"
+                    android:icon="@drawable/trust"
+                    android:title="我要蹭课" />
+                <item
                     android:id="@+id/nav_fix"
                     android:icon="@drawable/electronics"
                     android:title="电脑义修" />
                 <item
                     android:id="@+id/nav_changeBg"
                     android:icon="@drawable/color"
-                    android:title="更换背景" />
+                    android:title="自定风格" />
                 <item
                     android:id="@+id/nav_joinUs"
                     android:icon="@drawable/favorite"
@@ -23,11 +27,19 @@
                     android:id="@+id/nav_update"
                     android:icon="@drawable/download"
                     android:title="检查更新" />
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/calendar"
+                    android:title="分享/备份" />
             </menu>
 
         </item>
         <item android:title="其他">
             <menu>
+                <item
+                    android:id="@+id/nav_donate"
+                    android:icon="@drawable/gifts"
+                    android:title="捐赠" />
                 <item
                     android:id="@+id/nav_feedback"
                     android:icon="@drawable/service"

@@ -5,8 +5,9 @@ package com.suda.yzune.wakeupschedule.model.bean;
  */
 
 public class Course {
-    private String name, room, teach, id;//课程名称、上课教室，教师，课程编号
+    private String name, room, teach, id, campus;//课程名称、上课教室，教师，课程编号
     int start, step, day, startWeek, endWeek, isOdd;    //开始上课节次， 一共几节课
+    long num;
 
     public Course(String name, String room, int start, int step,
                   String teach, String id, int day, int startWeek, int endWeek, int isOdd) {
@@ -21,6 +22,14 @@ public class Course {
         this.startWeek = startWeek;
         this.endWeek = endWeek;
         this.isOdd = isOdd;
+    }
+
+    public long getNum() {
+        return num;
+    }
+
+    public void setNum(long num) {
+        this.num = num;
     }
 
     public String getId() {
@@ -101,6 +110,14 @@ public class Course {
 
     public void setIsOdd(int isOdd) {
         this.isOdd = isOdd;
+    }
+
+    public String getCampus() {
+        return campus;
+    }
+
+    public void setCampus(String campus) {
+        this.campus = campus;
     }
 }
 

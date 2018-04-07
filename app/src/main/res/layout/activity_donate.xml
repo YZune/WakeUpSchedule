@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.suda.yzune.wakeupschedule.view.activity.DonateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:padding="24dp"
+            android:text="非常感谢你\n选择使用WakeUp课程表\n如果觉得它还蛮好用的话\n请随意捐赠哦~\n不捐赠也没关系啦\n可以看看下面的小文\n我都将看做一份心意\n爱你们" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_alipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="-24dp"
+            android:background="@color/colorPrimary"
+            android:padding="16dp"
+            android:text="使用支付宝随意捐赠"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="32dp"
+            android:text="嗯……"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="256dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="为什么会有WakeUp课程表？一个很直接的原因是，我们的教务系统只能由校园网访问了。这直接导致像超级课程表这样的商业课程表App，我们都用不了了，那就自己做一个试试吧。当然还有别的原因，我大一的时候不太喜欢超级课程表，眼花缭乱的广告是令人不适的。接触Android开发，是社团一个很好的学长给了我这样的机会，我很自然地就想把App命名为WakeUp课程表。后来社团要招新了，我就在想能不能通过这个课程表吸引到一些学弟学妹，所以就在里面添加了一个加我们Q群的入口，效果怎么样我也不清楚，但现在我觉得我们社团还是很有活力的。
+            \n第一个正式版本开发时间好像没有一个星期，现在回想觉得蛮简陋的，而且还是要显示教务的网站来抓取课程的，不太友好吧，有点急于推出的意思。后来收集了大家的建议，才一点一点地把它完善好。当然应用商店里面其实还有几款很优秀的课程表App，而WakeUp课程表，其实还有很多缺陷和不足。有人在反馈问题的时候会问，是不是我一个人开发的。并不，这是大家一起努力的结果，在这里谢谢你们。
+\nWakeUp课程表在某个应用商店的下载量已经破万，我也不曾去统计它的实际用户有多少，我知道有人在用而且也确实方便了他们，我就很快乐。社团运作需要资金，我们也在思考怎么去拉赞助，而我，也曾想过给App添加一些友好的广告来吸引赞助方。现在想来幸好没有加，App里的广告怎么都会有些恼人的。未来也不会有广告。我平时也会使用一些个人开发者的App，里面一般会有一个捐赠的渠道。这里迟迟才加，是我觉得之前的版本并未完善得值得你们去捐赠，当然现在也有些底气不足。
+\n捐赠所获的每一笔钱，我会用来干什么呢？不会用于我个人。实际的金钱会用于社团的建设和服务器的续费，可能还会用于iOS版本的上架，而捐赠的心意会激励我继续把App完善好。感谢你们参与了WakeUp课程的成长，让我知道我不是在孤军奋战。"/>
+    </LinearLayout>
+
+</ScrollView>

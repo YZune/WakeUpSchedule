@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.suda.yzune.wakeupschedule.view.activity.ViewOtherCourse">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <ImageView
+            android:id="@+id/headerBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:src="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/day_spinner"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:entries="@array/day"
+            android:paddingLeft="16dp"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/begin_spinner"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:entries="@array/begin"
+            android:paddingLeft="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="72dp">
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/campus_spinner"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:entries="@array/campus"
+            android:paddingLeft="16dp" />
+
+        <ImageButton
+            android:id="@+id/ib_search"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/search" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_otherCourse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:id="@+id/tv_none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="264dp"
+        android:textSize="16sp"
+        android:lineSpacingExtra="8dp"
+        android:text="选择好查询条件后\n再查询哦ヾ(•ω•`)o"/>
+
+</RelativeLayout>

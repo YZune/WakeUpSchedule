@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    tools:context="com.suda.yzune.wakeupschedule.view.fragment.ScheduleFragment">
+
+    <LinearLayout
+        android:id="@+id/weekName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="0.5"
+            android:background="@color/classIndex"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:background="@color/classIndex"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="一" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:background="@color/classIndex"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="二" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:background="@color/classIndex"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="三" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:background="@color/classIndex"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="四" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:background="@color/classIndex"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="五" />
+
+        <TextView
+            android:id="@+id/title6"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:background="@color/classIndex"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="六" />
+
+        <TextView
+            android:id="@+id/title7"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:background="@color/classIndex"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="日" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

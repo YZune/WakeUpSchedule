@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#64cbff"
+    android:gravity="center_horizontal"
+    android:paddingBottom="80dp"
+    tools:context="com.suda.yzune.wakeupschedule.view.fragment.Intro2Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_intro_head"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="56dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="请选择学校"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/iv_intro_done"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/intro_done"
+                android:alpha="0"/>
+
+            <ImageView
+                android:id="@+id/iv_school"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/intro_school" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_suda"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:lineSpacingExtra="8dp"
+            android:text="苏州大学"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_other"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:lineSpacingExtra="8dp"
+            android:text="其他学校"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:alpha="0"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:id="@+id/tip_suda"
+        android:lineSpacingExtra="8dp"
+        android:text="获取课程表需要先连接苏大WiFi哦~\n可以不登录网关\n准备就绪！"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:alpha="0"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:id="@+id/tip_other"
+        android:lineSpacingExtra="8dp"
+        android:text="现在支持手动输入课程哦\n由于我们很贴心的设计\n这个过程并不会太麻烦哒\n准备就绪！"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

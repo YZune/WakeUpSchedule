@@ -6,7 +6,7 @@
     style="@style/ImageTranslucentTheme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.suda.yzune.wakeupschedule.view.ScheduleActivity">
+    tools:context="com.suda.yzune.wakeupschedule.view.activity.ScheduleActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
             android:id="@+id/none_tip"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="160dp"
             android:gravity="center_horizontal"
             android:lineSpacingExtra="8dp"
             android:text="还没有添加课程哦~\n点右下角的按钮添加吧"
@@ -31,13 +31,13 @@
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab_add"
-            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_margin="16dp"
-            android:src="@drawable/add"/>
+            android:src="@drawable/add"
+            android:visibility="gone" />
 
         <LinearLayout
             android:id="@+id/ll_schedule"
@@ -59,8 +59,8 @@
                     android:id="@+id/ib_nav"
                     android:layout_width="56dp"
                     android:layout_height="56dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
                     android:alpha="0.5"
                     android:background="?android:attr/selectableItemBackground"
                     android:padding="16dp"
@@ -80,30 +80,6 @@
                     android:textSize="20sp" />
 
                 <ImageButton
-                    android:id="@+id/ib_back"
-                    android:layout_width="56dp"
-                    android:layout_height="56dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_toStartOf="@+id/title"
-                    android:alpha="0.5"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:padding="16dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/back" />
-
-                <ImageButton
-                    android:id="@+id/ib_more"
-                    android:layout_width="56dp"
-                    android:layout_height="56dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_toEndOf="@+id/title"
-                    android:alpha="0.5"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:padding="16dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/more" />
-
-                <ImageButton
                     android:id="@+id/ib_recatch"
                     android:layout_width="56dp"
                     android:layout_height="56dp"
@@ -115,9 +91,60 @@
                     android:scaleType="centerCrop"
                     android:src="@drawable/refresh_black" />
 
+                <ImageButton
+                    android:id="@+id/ib_edit"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:alpha="0.5"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/edit"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/ib_save"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:alpha="0.5"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="16dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/save"
+                    android:visibility="gone" />
+
             </RelativeLayout>
 
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-8dp"
+                android:text="3月6日  周二" />
+
+            <SeekBar
+                android:id="@+id/sb_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginRight="56dp"
+                android:indeterminateDrawable="@color/nine"
+                android:max="26"
+                android:min="1" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
             <LinearLayout
+                android:visibility="gone"
                 android:id="@+id/weekName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -192,6 +219,7 @@
             </LinearLayout>
 
             <ScrollView
+                android:visibility="gone"
                 android:id="@+id/scrollPanel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -284,6 +312,7 @@
                             android:text="9" />
 
                         <TextView
+                            android:id="@+id/tv_10"
                             android:layout_width="fill_parent"
                             android:layout_height="@dimen/weekItemHeight"
                             android:layout_marginLeft="@dimen/weekItemMarLeft"
@@ -292,6 +321,7 @@
                             android:text="10" />
 
                         <TextView
+                            android:id="@+id/tv_11"
                             android:layout_width="fill_parent"
                             android:layout_height="@dimen/weekItemHeight"
                             android:layout_marginLeft="@dimen/weekItemMarLeft"
@@ -300,12 +330,53 @@
                             android:text="11" />
 
                         <TextView
+                            android:id="@+id/tv_12"
                             android:layout_width="fill_parent"
                             android:layout_height="@dimen/weekItemHeight"
                             android:layout_marginLeft="@dimen/weekItemMarLeft"
                             android:layout_marginTop="@dimen/weekItemMarTop"
                             android:gravity="center_horizontal|center_vertical"
                             android:text="12" />
+
+                        <TextView
+                            android:id="@+id/tv_13"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/weekItemHeight"
+                            android:layout_marginLeft="@dimen/weekItemMarLeft"
+                            android:layout_marginTop="@dimen/weekItemMarTop"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="13"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_14"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/weekItemHeight"
+                            android:layout_marginLeft="@dimen/weekItemMarLeft"
+                            android:layout_marginTop="@dimen/weekItemMarTop"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="14"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_15"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/weekItemHeight"
+                            android:layout_marginLeft="@dimen/weekItemMarLeft"
+                            android:layout_marginTop="@dimen/weekItemMarTop"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="15"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/weekItemHeight"
+                            android:layout_marginLeft="@dimen/weekItemMarLeft"
+                            android:layout_marginTop="@dimen/weekItemMarTop"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="16"
+                            android:visibility="gone" />
                     </LinearLayout>
                     <!-- 周一到周日的排列 -->
                     <LinearLayout
@@ -384,6 +455,6 @@
         android:layout_gravity="left"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/main_navigation_menu"></android.support.design.widget.NavigationView>
+        app:menu="@menu/main_navigation_menu" />
 
 </android.support.v4.widget.DrawerLayout>

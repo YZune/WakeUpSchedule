@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context="com.suda.yzune.wakeupschedule.view.activity.SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_termStart"
+            style="@style/setting_item">
+
+            <TextView
+                style="@style/setting_item_text"
+                android:text="学期开始日期" />
+
+            <TextView
+                android:id="@+id/dateDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/item_margin_right"
+                android:text="2017-09-04"
+                android:textColor="@color/gray" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <RelativeLayout
+            android:id="@+id/rl_item_height"
+            style="@style/setting_item">
+
+            <TextView
+                style="@style/setting_item_text"
+                android:text="课程格子高度" />
+
+            <TextView
+                android:id="@+id/tv_item_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/item_margin_right"
+                android:text="56dp"
+                android:textColor="@color/gray" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <RelativeLayout
+            android:id="@+id/rl_widget_height"
+            style="@style/setting_item"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/setting_item_text"
+                android:text="小部件课程格子高度" />
+
+            <TextView
+                android:id="@+id/tv_widget_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/item_margin_right"
+                android:text="56dp"
+                android:textColor="@color/gray" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/divider"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_classNum"
+            style="@style/setting_item">
+
+            <TextView
+                style="@style/setting_item_text"
+                android:text="一天课程节数" />
+
+            <TextView
+                android:id="@+id/tv_classNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/item_margin_right"
+                android:text="11节"
+                android:textColor="@color/gray" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <RelativeLayout
+            android:id="@+id/rl_seekbar"
+            style="@style/setting_item">
+
+            <TextView
+                style="@style/setting_item_text"
+                android:text="显示主界面滑动条" />
+
+            <Switch
+                android:id="@+id/s_seekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:checked="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <RelativeLayout
+            android:id="@+id/rl_change_color"
+            style="@style/setting_item">
+
+            <TextView
+                style="@style/setting_item_text"
+                android:text="主界面文字反色" />
+
+            <Switch
+                android:id="@+id/s_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <RelativeLayout
+            android:id="@+id/rl_update"
+            style="@style/setting_item">
+
+            <TextView
+                style="@style/setting_item_text"
+                android:text="自动检查更新" />
+
+            <Switch
+                android:id="@+id/s_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:checked="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <RelativeLayout
+            android:id="@+id/rl_show"
+            style="@style/setting_item">
+
+            <TextView
+                style="@style/setting_item_text"
+                android:text="显示非本周课程" />
+
+            <Switch
+                android:id="@+id/s_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <RelativeLayout
+            android:id="@+id/rl_classTime"
+            style="@style/setting_item"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                style="@style/setting_item_text"
+                android:text="上课时间" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <RelativeLayout
+            android:id="@+id/rl_save"
+            style="@style/setting_item"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/setting_item_text"
+                android:text="备份和恢复" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/divider"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_clean"
+            style="@style/setting_item">
+
+            <TextView
+                style="@style/setting_item_text"
+                android:text="重置App" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

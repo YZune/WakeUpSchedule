@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context="com.suda.yzune.wakeupschedule.view.AboutActivity">
+    tools:context="com.suda.yzune.wakeupschedule.view.activity.AboutActivity">
 
     <RelativeLayout
         android:id="@+id/rl_title"
@@ -44,15 +44,26 @@
                 android:src="@mipmap/ic_launcher" />
 
             <TextView
+                android:id="@+id/tv_version"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="8dp"
+                android:paddingLeft="48dp"
+                android:paddingRight="48dp"
+                android:paddingTop="16dp"
+                android:text="版本号：1.03" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:gravity="center_horizontal"
                 android:lineSpacingExtra="8dp"
                 android:paddingBottom="16dp"
                 android:paddingLeft="48dp"
                 android:paddingRight="48dp"
-                android:paddingTop="16dp"
-                android:text="版本号：1.03\nWakeUp课程表\n由WakeUp俱乐部开发" />
+                android:text="WakeUp课程表\n由WakeUp俱乐部开发" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -91,7 +102,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
-                android:text="\nQQ交流群：577789383" />
+                android:text="\nWakeUp课程表交流群：161714534" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="\n苏大QQ交流群：577789383" />
 
             <TextView
                 android:layout_width="match_parent"

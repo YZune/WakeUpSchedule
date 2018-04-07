@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.suda.yzune.wakeupschedule.view.activity.TimeSettingActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_class_time"
+        style="@style/setting_item">
+
+        <TextView
+            style="@style/setting_item_text"
+            android:text="课程时长" />
+
+        <TextView
+            android:id="@+id/tv_class_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/item_margin_right"
+            android:text="50分钟"
+            android:textColor="@color/gray" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_time_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

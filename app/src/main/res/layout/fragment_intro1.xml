@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#64cbff"
+    android:orientation="vertical"
+    tools:context="com.suda.yzune.wakeupschedule.view.fragment.Intro1Fragment">
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:paddingBottom="48dp"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/logo_bg" />
+
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/iv_logo_deer"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/logo_deer" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:paddingTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="8dp"
+            android:text="WakeUp课程表"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="8dp"
+            android:text="不负时光"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="8dp"
+            android:text="让我们先进行一些设置吧"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

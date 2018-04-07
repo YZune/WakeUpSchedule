@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_Login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.suda.yzune.wakeupschedule.view.activity.LoginXKActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bkg" />
+
+    <android.support.v7.widget.CardView
+        android:translationZ="120dp"
+        android:id="@+id/cv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:elevation="36dp"
+        app:cardCornerRadius="2dp">
+
+        <LinearLayout
+            android:id="@+id/ll_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingTop="16dp">
+
+            <!-- Name Label -->
+            <EditText
+
+                android:id="@+id/input_Login"
+                style="@style/myEditText"
+                android:hint="请输入学号"
+                android:inputType="phone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_password"
+                    style="@style/myEditText"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword" />
+
+                <CheckBox
+                    android:id="@+id/cbDisplayPassword"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="-30dp"
+                    android:layout_marginTop="24dp"
+                    android:button="@drawable/seepw_style"
+                    android:checked="false" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/choose_campus"
+                style="@style/myEditText"
+                android:hint="请点击选择校区" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_code"
+                    style="@style/myEditText"
+                    android:hint="请输入验证码"
+                    android:inputType="text" />
+
+                <ImageView
+                    android:id="@+id/iv_none"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+                <ImageView
+                    android:id="@+id/iv_code"
+                    android:layout_width="48dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="32dp"
+                    android:src="@color/white" />
+
+                <ImageButton
+                    android:id="@+id/ib_recatch"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="-16dp"
+                    android:layout_marginTop="20dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/login_refresh"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:clickable="true"
+                android:text="使用帮助"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_fromHTML"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:text="验证码总是错误？试试网页登录"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:lineSpacingExtra="8dp"
+                android:text="使用帮助：\n• 需要连接苏大WiFi，可不登录网关\n• 验证码处点击可刷新\n• 极小概率会出现验证码一直错误的情况。当验证码错误多于5次，下方登录按钮会提示使用网页版登录"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_for_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:text="遇到问题？查看帮助"
+                android:textColor="@color/login_button" />
+
+            <!-- Signup Button -->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/shape_circle_button"
+                android:padding="12dp"
+                android:text="登  录"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

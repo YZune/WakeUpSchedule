@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#FF88CB</color>
-    <color name="colorPrimaryDark">#FF88CB</color>
+    <color name="colorPrimaryDark">#d66fa9</color>
+    <color name="colorPrimaryLight">#ff9fd5</color>
     <color name="colorAccent">#FF88CB</color>
     <color name="transparent">#00000000</color>
 
@@ -18,20 +19,23 @@
     <color name="page_bg">#f5f7f8</color>
     <color name="divider">#e7e7e7</color>
     <color name="trmainColor">#772196F3</color>
+    <color name="alphaWhite">#7effffff</color>
 
-    <color name="one">#b48af28d</color>
-    <color name="two">#b400ff9d</color>
-    <color name="three">#b4ff6200</color>
-    <color name="four">#b4e7554e</color>
-    <color name="five">#b44695ff</color>
-    <color name="six">#b4ca71ff</color>
-    <color name="seven">#b43daff1</color>
-    <color name="eight">#b45d5dff</color>
-    <color name="nine">#b480deea</color>
-    <color name="ten">#b42f88ff</color>
+    <color name="one">#8af28d</color>
+    <color name="two">#00ff9d</color>
+    <color name="three">#ff6200</color>
+    <color name="four">#e7554e</color>
+    <color name="five">#4695ff</color>
+    <color name="six">#ca71ff</color>
+    <color name="seven">#3daff1</color>
+    <color name="eight">#5d5dff</color>
+    <color name="nine">#80deea</color>
+    <color name="ten">#2f88ff</color>
     <color name="none">#322b2b2b</color>
 
     <color name="widgetBg">#b4ffffff</color>
     <color name="widgetText">#000000</color>
     <color name="widgetFont">#2f88ff</color>
+
+    <color name="login_button">#0c8590</color>
 </resources>

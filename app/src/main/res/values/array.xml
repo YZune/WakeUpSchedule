@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="day">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周天</item>
+    </string-array>
+    <string-array name="begin">
+        <item>第1节</item>
+        <item>第2节</item>
+        <item>第3节</item>
+        <item>第4节</item>
+        <item>第5节</item>
+        <item>第6节</item>
+        <item>第7节</item>
+        <item>第8节</item>
+        <item>第9节</item>
+        <item>第10节</item>
+        <item>第11节</item>
+        <item>第12节</item>
+    </string-array>
+    <string-array name="campus">
+        <item>天赐庄校区</item>
+        <item>北校区</item>
+        <item>独墅湖校区</item>
+        <item>阳澄湖校区</item>
+    </string-array>
+
+    <string-array name="odd">
+        <item>全周</item>
+        <item>单周</item>
+        <item>双周</item>
+    </string-array>
+</resources>

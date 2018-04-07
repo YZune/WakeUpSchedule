@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="24dp">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="设置上课节数"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/ib_less"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/dialog_title"
+        android:layout_marginTop="16dp"
+        android:layout_toStartOf="@+id/et_number"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/subtract" />
+
+    <EditText
+        android:enabled="false"
+        android:textColor="@color/black"
+        android:id="@+id/et_number"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/dialog_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="11" />
+
+    <ImageButton
+        android:id="@+id/ib_more"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/dialog_title"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/et_number"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/add_black" />
+
+</RelativeLayout>

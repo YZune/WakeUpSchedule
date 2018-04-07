@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="24dp">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="设置格子高度"
+        android:textSize="16sp" />
+
+    <EditText
+        android:enabled="false"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/black"
+        android:id="@+id/et_number"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/dialog_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="56 dp" />
+
+    <SeekBar
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:progress="56"
+        android:max="56"
+        android:layout_marginTop="8dp"
+        android:id="@+id/sb_height"
+        android:layout_below="@id/et_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

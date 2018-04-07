@@ -12,7 +12,7 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
-    <style name="ImageTranslucentTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="ImageTranslucentTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">false</item>
         <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
@@ -21,7 +21,7 @@
 
     <style name="setting_item">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_height">56dp</item>
         <item name="android:background">@drawable/bg_ripple</item>
         <item name="android:clickable">true</item>
     </style>
@@ -32,6 +32,40 @@
         <item name="android:layout_centerVertical">true</item>
         <item name="android:layout_marginLeft">@dimen/item_margin_left</item>
         <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="myEditText">
+        <item name="android:textColor">@color/login_button</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:drawableBottom">@drawable/edittext_bottom</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textCursorDrawable">@drawable/edittext_cursor</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="courseEditText">
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="edit_text_changeable">
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:enabled">false</item>
+        <item name="android:background">@drawable/edit_text_change</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="alert_text">
+        <item name="android:lineSpacingExtra">8dp</item>
         <item name="android:textSize">16sp</item>
     </style>
 

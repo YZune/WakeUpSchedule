@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_contentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/weekPanel_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/classIndex"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/weekItemHeight_widget"
+                android:layout_marginLeft="@dimen/weekItemMarLeft"
+                android:layout_marginTop="@dimen/weekItemMarTop"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/weekItemHeight_widget"
+                android:layout_marginLeft="@dimen/weekItemMarLeft"
+                android:layout_marginTop="@dimen/weekItemMarTop"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/weekItemHeight_widget"
+                android:layout_marginLeft="@dimen/weekItemMarLeft"
+                android:layout_marginTop="@dimen/weekItemMarTop"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/weekItemHeight_widget"
+                android:layout_marginLeft="@dimen/weekItemMarLeft"
+                android:layout_marginTop="@dimen/weekItemMarTop"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/tv_5"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/weekItemHeight_widget"
+                android:layout_marginLeft="@dimen/weekItemMarLeft"
+                android:layout_marginTop="@dimen/weekItemMarTop"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/tv_6"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/weekItemHeight_widget"
+                android:layout_marginLeft="@dimen/weekItemMarLeft"
+                android:layout_marginTop="@dimen/weekItemMarTop"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/tv_7"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/weekItemHeight_widget"
+                android:layout_marginLeft="@dimen/weekItemMarLeft"
+                android:layout_marginTop="@dimen/weekItemMarTop"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/tv_8"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/weekItemHeight_widget"
+                android:layout_marginLeft="@dimen/weekItemMarLeft"
+                android:layout_marginTop="@dimen/weekItemMarTop"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/tv_9"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/weekItemHeight_widget"
+                android:layout_marginLeft="@dimen/weekItemMarLeft"
+                android:layout_marginTop="@dimen/weekItemMarTop"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/tv_10"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/weekItemHeight_widget"
+                android:layout_marginLeft="@dimen/weekItemMarLeft"
+                android:layout_marginTop="@dimen/weekItemMarTop"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="10" />
+
+            <TextView
+                android:id="@+id/tv_11"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/weekItemHeight_widget"
+                android:layout_marginLeft="@dimen/weekItemMarLeft"
+                android:layout_marginTop="@dimen/weekItemMarTop"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="11" />
+
+            <TextView
+                android:id="@+id/tv_12"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/weekItemHeight_widget"
+                android:layout_marginLeft="@dimen/weekItemMarLeft"
+                android:layout_marginTop="@dimen/weekItemMarTop"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="12" />
+
+            <TextView
+                android:id="@+id/tv_13"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/weekItemHeight_widget"
+                android:layout_marginLeft="@dimen/weekItemMarLeft"
+                android:layout_marginTop="@dimen/weekItemMarTop"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="13"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_14"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/weekItemHeight_widget"
+                android:layout_marginLeft="@dimen/weekItemMarLeft"
+                android:layout_marginTop="@dimen/weekItemMarTop"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="14"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_15"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/weekItemHeight_widget"
+                android:layout_marginLeft="@dimen/weekItemMarLeft"
+                android:layout_marginTop="@dimen/weekItemMarTop"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="15"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_16"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/weekItemHeight_widget"
+                android:layout_marginLeft="@dimen/weekItemMarLeft"
+                android:layout_marginTop="@dimen/weekItemMarTop"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="16"
+                android:visibility="gone" />
+        </LinearLayout>
+        <!-- 周一到周日的排列 -->
+        <LinearLayout
+            android:id="@+id/weekPanel_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weekPanel_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weekPanel_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weekPanel_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weekPanel_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weekPanel_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weekPanel_7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

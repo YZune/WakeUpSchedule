@@ -1,0 +1,28 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="todayCourse"
+        android:enabled="true"
+        android:icon="@mipmap/today_launcher"
+        android:shortcutShortLabel="@string/shortcuts_today"
+        android:shortcutLongLabel="@string/shortcuts_today">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.suda.yzune.wakeupschedule"
+            android:targetClass="com.suda.yzune.wakeupschedule.view.activity.TodayCourseActivity" />
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+    <shortcut
+        android:shortcutId="fixHelp"
+        android:enabled="true"
+        android:icon="@mipmap/fix_launcher"
+        android:shortcutShortLabel="@string/fix_help"
+        android:shortcutLongLabel="@string/fix_help">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.suda.yzune.wakeupschedule"
+            android:targetClass="com.suda.yzune.wakeupschedule.view.activity.FixActivity" />
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+</shortcuts>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.activity.ThemeSettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="侧栏"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rl_nav_pic"
+            style="@style/setting_item">
+
+            <TextView
+                style="@style/setting_item_text"
+                android:text="设置侧栏图片" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="主界面"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rl_bg_pic"
+            style="@style/setting_item">
+
+            <TextView
+                style="@style/setting_item_text"
+                android:text="设置背景图片" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bg_clear"
+            style="@style/setting_item">
+
+            <TextView
+                style="@style/setting_item_text"
+                android:text="恢复默认背景" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_item_height"
+            style="@style/setting_item">
+
+            <TextView
+                style="@style/setting_item_text"
+                android:text="课程格子高度" />
+
+            <TextView
+                android:id="@+id/tv_item_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/item_margin_right"
+                android:text="56dp"
+                android:textColor="@color/gray" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_seekbar"
+            style="@style/setting_item">
+
+            <TextView
+                style="@style/setting_item_text"
+                android:text="显示主界面滑动条" />
+
+            <Switch
+                android:id="@+id/s_seekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:checked="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_change_color"
+            style="@style/setting_item">
+
+            <TextView
+                style="@style/setting_item_text"
+                android:text="主界面文字变白" />
+
+            <Switch
+                android:id="@+id/s_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/rl_bg_blur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/setting_item_text"
+                    android:text="背景高斯模糊程度" />
+
+                <TextView
+                    android:id="@+id/tv_bg_blur"
+                    style="@style/setting_item_text"
+                    android:text="0%"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/sb_bg_blur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:max="100"
+                android:min="0"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_item_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/setting_item_text"
+                    android:text="课程色块不透明度" />
+
+                <TextView
+                    android:id="@+id/tv_item_alpha"
+                    style="@style/setting_item_text"
+                    android:text="0%"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/sb_alpha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:max="100"
+                android:min="0"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/divider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="桌面小部件"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/rl_widget_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="48dp">
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/setting_item_text"
+                    android:text="课程色块不透明度" />
+
+                <TextView
+                    android:id="@+id/tv_widget_alpha"
+                    style="@style/setting_item_text"
+                    android:text="0%"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/sb_widget_alpha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:max="100"
+                android:min="0"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

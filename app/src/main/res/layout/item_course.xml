@@ -19,61 +19,88 @@
         android:foreground="?android:attr/selectableItemBackgroundBorderless">
 
         <LinearLayout
-            android:layout_margin="16dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/cv_courseName"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_margin="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="数据结构"
-                android:textSize="16sp"
-                android:textColor="#000000"/>
+                android:orientation="vertical"
+                android:gravity="center">
 
-            <TextView
-                android:id="@+id/cv_teacher"
-                android:layout_marginTop="8dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="老师：唐自立" />
+                <TextView
+                    android:id="@+id/cv_courseName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="数据结构"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
 
-            <TextView
-                android:id="@+id/cv_room"
-                android:layout_marginTop="8dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="地点：理工楼153" />
+                <TextView
+                    android:id="@+id/cv_teacher"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="老师：唐自立" />
 
-            <TextView
-                android:id="@+id/cv_time"
-                android:layout_marginTop="8dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="时间：第 5 - 6 节" />
+                <TextView
+                    android:id="@+id/cv_room"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地点：理工楼153" />
 
-            <TextView
-                android:id="@+id/cv_timeDetail"
-                android:layout_marginTop="8dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="10:00 - 11:00" />
+                <TextView
+                    android:id="@+id/cv_time"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时间：第 5 - 6 节" />
 
-            <TextView
-                android:id="@+id/cv_odd"
-                android:layout_marginTop="8dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="单周" />
+                <TextView
+                    android:id="@+id/cv_timeDetail"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:00 - 11:00" />
 
-            <TextView
-                android:id="@+id/cv_week"
-                android:layout_marginTop="8dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="第 4 - 18 周" />
+                <TextView
+                    android:id="@+id/cv_odd"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单周" />
+
+                <TextView
+                    android:id="@+id/cv_week"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="第 4 - 18 周" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rl_addCourse"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent">
+
+                <ImageButton
+                    android:id="@+id/ib_addCourse"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/add" />
+
+            </RelativeLayout>
 
         </LinearLayout>
 
